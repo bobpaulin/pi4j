@@ -32,6 +32,10 @@
 			<scope>compile</scope>
 		</dependency>
 		<dependency>
+			<groupId>org.osgi</groupId>
+			<artifactId>org.osgi.core</artifactId>
+		</dependency>
+		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<scope>test</scope>
@@ -154,6 +158,7 @@
 					<instructions>
 						<Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
 						<Bundle-Version>${project.version}</Bundle-Version>
+						<Bundle-Activator>com.pi4j.osgi.Activator</Bundle-Activator>
 						<Export-Package>
 							com.pi4j.util.*,
 							com.pi4j.jni.*,
@@ -161,8 +166,12 @@
 							com.pi4j.system.*,
 							com.pi4j.io.serial.*,
 							com.pi4j.io.gpio.*,
+							com.pi4j.io.gpio.trigger.*,
 							com.pi4j.io.i2c.*
 						</Export-Package>
+						<Bundle-NativeCode>
+							lib/hard-float/libpi4j.so; processor=arm; osname=Linux; selection-filter="(org.apache.felix.processor.feature=vfp)", lib/soft-float/libpi4j.so; osname=Linux; processor=arm
+						</Bundle-NativeCode>
 						<Private-Package>
 						</Private-Package>
 					</instructions>

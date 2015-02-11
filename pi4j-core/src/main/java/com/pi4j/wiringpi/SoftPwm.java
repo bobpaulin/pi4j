@@ -85,11 +85,6 @@ public class SoftPwm {
     private SoftPwm() {
         // forbid object construction 
     }
-    
-    static {
-        // Load the platform library
-        NativeLibraryLoader.load("pi4j", "libpi4j.so");
-    }
 
     /**
      * <p>int softPwmCreate (int pin, int initialValue, int pwmRange);</p>

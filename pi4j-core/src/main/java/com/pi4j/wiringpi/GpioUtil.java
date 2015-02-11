@@ -56,11 +56,6 @@ public class GpioUtil {
     private GpioUtil() {
         // forbid object construction 
     }
-    
-    static {
-        // Load the platform library
-        NativeLibraryLoader.load("pi4j", "libpi4j.so");
-    }
 
     /**
      * <p>GPIO PIN DIRECTION</p>

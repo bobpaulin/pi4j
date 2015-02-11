@@ -86,11 +86,6 @@ public class Spi {
     private Spi()  {
         // forbid object construction 
     }
-    
-    static {
-        // Load the platform library
-        NativeLibraryLoader.load("pi4j", "libpi4j.so");
-    }
 
     /**
      * <p>wiringPiSPIGetFd:</p>

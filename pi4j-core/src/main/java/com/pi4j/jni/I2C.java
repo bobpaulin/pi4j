@@ -50,11 +50,6 @@ public class I2C {
         // forbid object construction 
     }
     
-    static {
-        // Load the platform library
-        NativeLibraryLoader.load("pi4j", "libpi4j.so");
-    }
-
     /**
      * Opens linux file for r/w returning file handle.
      * 

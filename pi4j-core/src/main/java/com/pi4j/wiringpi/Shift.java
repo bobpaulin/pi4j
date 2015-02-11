@@ -67,11 +67,6 @@ public class Shift {
     private Shift() {
         // forbid object construction 
     }
-    
-    static {
-        // Load the platform library
-        NativeLibraryLoader.load("pi4j", "libpi4j.so");
-    }
 
     /**
      * <p>uint8_t shiftIn (uint8_t dPin, uint8_t cPin, uint8_t order);</p>

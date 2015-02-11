@@ -85,11 +85,6 @@ public class Gertboard {
     private Gertboard() {
         // forbid object construction 
     }
-    
-    static {
-        // Load the platform library
-        NativeLibraryLoader.load("pi4j", "libpi4j.so");
-    }
 
     /**
      * <p> This outputs the supplied value (0-255) to the given channel (0 or 1). The output voltage is:

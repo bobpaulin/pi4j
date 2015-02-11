@@ -133,11 +133,6 @@ public class Gpio {
      */
     public static final int PUD_UP = 2;
 
-    static {
-        // Load the platform library
-        NativeLibraryLoader.load("pi4j", "libpi4j.so");
-    }
-
     /**
      * <p>
      * This initializes the wiringPi system and assumes that the calling program is going to be

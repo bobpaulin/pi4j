@@ -75,11 +75,6 @@ public class Serial {
     private Serial() {
         // forbid object construction 
     }
-    
-    static {
-        // Load the platform library
-        NativeLibraryLoader.load("pi4j", "libpi4j.so");
-    }
 
     /**
      * <p>int serialOpen (char *device, int baud);</p>

@@ -66,11 +66,6 @@ public class Nes {
     private Nes() {
         // forbid object construction 
     }
-    
-    static {
-        // Load the platform library
-        NativeLibraryLoader.load("pi4j", "libpi4j.so");
-    }
 
     /**
      * <p>setupNesJoystick:</p>
